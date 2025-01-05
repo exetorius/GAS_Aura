@@ -33,7 +33,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Uproject.Aura.executor": "Run",
+    "Uproject.Aura.executor": "Debug",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -146,7 +146,7 @@
       <workItem from="1735761606837" duration="2128000" />
       <workItem from="1735823211248" duration="6924000" />
       <workItem from="1736000041318" duration="7607000" />
-      <workItem from="1736105001452" duration="6928000" />
+      <workItem from="1736105001452" duration="7868000" />
     </task>
     <servers />
   </component>
