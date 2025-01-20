@@ -37,7 +37,6 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 		{
 			for (const FGameplayTag& Tag : AssetTags)
 			{
-				//TODO: Broadcast the tag to the Widget Controller
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString(Tag.ToString()));
 			}
 		}
