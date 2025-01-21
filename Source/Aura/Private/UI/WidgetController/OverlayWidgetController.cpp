@@ -33,11 +33,13 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 
 	// LAMBDA function receiving broadcast from AuraAbilitySystemComponent.cpp Effect Applied function
 	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->EffectAssetTags.AddLambda(
-		[](const FGameplayTagContainer& AssetTags)
+		[this](const FGameplayTagContainer& AssetTags)
 		{
 			for (const FGameplayTag& Tag : AssetTags)
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString(Tag.ToString()));
+
+				FUIWidgetRow* Row = GetDataTableRowByTag<FUIWidgetRow>(MessageWidgetDataTable, Tag);
 			}
 		}
 	);
